@@ -1,4 +1,8 @@
 // Java program to find median in an array
+// Here we take marks as array name
+// Creating one fuction to pass array as an argument
+// function brings code reusablity
+// Vishal Prajapati 14-09-2022
 
 import java.util.*;
 
