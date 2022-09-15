@@ -4,15 +4,23 @@
 // function brings code reusablity
 // Vishal Prajapati 14-09-2022
 
-import java.util.*;
-
 class medianofarray {
 	
 	// Function for calculating median
 	public static double findMedian(int marks[], int n)
 	{
-		// First we sort the array 
-		Arrays.sort(marks);
+		int temp;
+
+		// Code for sorting array element
+		for(int i=0; i<marks.length; i++){
+			for(int j = i+1; j< marks.length; j++){
+				if(marks[i]>marks[j]){
+					temp = marks[i];
+					marks[i] = marks[j];
+					marks[j] = temp;
+				}
+			}
+		}
 
 		// check for odd case
         //[1,5,3,2,4] here middle value is clearly 3 
